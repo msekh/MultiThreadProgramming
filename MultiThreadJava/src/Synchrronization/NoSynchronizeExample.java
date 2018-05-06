@@ -16,16 +16,16 @@ class First {
 class Second extends Thread {
 
     String msg;
-    First fobj;
+    First obj;
 
     public Second(String str, First fobj) {
         this.msg = str;
-        this.fobj = fobj;
+        this.obj = fobj;
         start();
     }
 
     public void run() {
-        fobj.display(msg);
+        obj.display(msg);
     }
 }
 
